@@ -23,7 +23,7 @@
   background-color: #1a1a1a; /* Darker background for cards */
   border: none;
   border-radius: 10px;
-  margin: 15px 0; /* Add spacing between cards */
+  margin: 20px 0; /* Add spacing between cards */
   height: 100%; /* Ensure equal height for all cards */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-image-source 0.3s ease-in-out;
 }
@@ -78,20 +78,4 @@
   color: #ff4500; /* Red color for project titles */
   font-weight: bold;
   margin-bottom: 15px;
-}
-
-.github-quote {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 1.2rem;
-  color: #334ad0; /* Red color for quote */
-}
-
-.github-link {
-  color: #ff4500; /* Red color for GitHub link */
-  text-decoration: underline;
-}
-
-.github-link:hover {
-  color: #ee8f4c; /* Light color on hover */
 }

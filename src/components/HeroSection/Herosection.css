@@ -1,0 +1,46 @@
+.hero-section {
+  background-color: #0d0d0d; /* Black background */
+  color: #e0e0e0; /* Light text color */
+  padding: 100px 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-image-source 0.3s ease-in-out;
+}
+
+.hero-section:hover {
+  transform: scale(1.02); /* Slight scaling effect on hover */
+  box-shadow: 0 4px 15px rgba(75, 0, 130, 0.3); /* Purple shadow on hover */
+  border-image-source: linear-gradient(to right, #4b0082, #ff4500); /* Gradient border on hover */
+  border-image-slice: 1;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #4b0082; /* Purple title */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #b3b3b3; /* Light gray subtitle */
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.hero-btn {
+  background-color: #4b0082; /* Purple button */
+  border: none;
+  margin-top: 30px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: #6a0dad; /* Lighter purple on hover */
+}
+
+.hero-image img {
+  max-width: 100%;
+  border: 5px solid #4b0082; /* Purple border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,32 @@
+.footer-section {
+    background-color: #0d0d0d; /* Black background */
+    color: #e0e0e0; /* Light text color */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+  }
+  
+  .back-to-top-button {
+    background-color: #4b0082; /* Purple button background */
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .back-to-top-button:hover {
+    background-color: #ff4500; /* Orange button background on hover */
+  }
+  
+  .footer-copyright {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,60 @@
+/* General styles for all sections */
+.section {
+    background-color: #0d0d0d; /* Black background */
+    color: #e0e0e0; /* Light text color */
+    padding: 60px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-image-source 0.3s ease-in-out;
+  }
+  
+  .section:hover {
+    transform: scale(1.02); /* Slight scaling effect on hover */
+    box-shadow: 0 4px 15px rgba(75, 0, 130, 0.3); /* Purple shadow on hover */
+    border-image-source: linear-gradient(to right, #4b0082, #ff4500); /* Gradient border on hover */
+    border-image-slice: 1;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b0082; /* Purple title */
+    margin-bottom: 40px;
+  }
+  
+  .skills-subtitle {
+    font-size: 1.8rem;
+    color: #b3b3b3; /* Light gray subtitle */
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-btn {
+    background-color: transparent;
+    border: 2px solid #4b0082; /* Purple border */
+    color: #e0e0e0; /* Light text color */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .skill-btn:hover {
+    background-color: #4b0082; /* Purple background on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  .skills-box {
+    border: 2px solid #4b0082; /* Purple border */
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-image-source 0.3s ease-in-out;
+  }
+  
+  .skills-box:hover {
+    transform: scale(1.05); /* Slight scaling effect on hover */
+    box-shadow: 0 4px 15px rgba(75, 0, 130, 0.3); /* Purple shadow on hover */
+    border-image-source: linear-gradient(to right, #4b0082, #ff4500); /* Gradient border on hover */
+    border-image-slice: 1;
+  }
+  

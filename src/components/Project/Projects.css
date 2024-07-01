@@ -23,7 +23,7 @@
   background-color: #1a1a1a; /* Darker background for cards */
   border: none;
   border-radius: 10px;
-  margin: 20px 0; /* Add spacing between cards */
+  margin: 20px 10px; /* Add spacing between cards */
   height: 100%; /* Ensure equal height for all cards */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-image-source 0.3s ease-in-out;
 }

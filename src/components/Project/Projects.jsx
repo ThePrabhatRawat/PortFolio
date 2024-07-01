@@ -17,7 +17,7 @@ function Projects() {
       description: 'News app built in React JS, deployed on Netlify.',
       githubLink: 'https://github.com/ThePrabhatRawat/NewsMania',
       liveLink: 'https://6676b0f9b8e00c7f8598633d--mellifluous-capybara-9b1f80.netlify.app/',
-      image: '/path/to/newsmania-image.jpg',
+      image: require('../../images/news.png'),
       technologies: ['ReactJS', 'Redux', 'REST API', 'Bootstrap 5']
     },
     {
@@ -31,7 +31,7 @@ function Projects() {
       title: 'MyPeerPro',
       description: 'Real-time code editor with video call, built in MERN.',
       githubLink: 'https://github.com/ThePrabhatRawat/To-Do-List-React',
-      image: '/path/to/mypeerpro-image.jpg',
+      image: require('../../images/code.png'),
       technologies: ['ReactJS', 'SocketIO', 'WebRTC', 'UUID', 'Bootstrap'],
     }
   ];

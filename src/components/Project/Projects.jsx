@@ -32,7 +32,7 @@ function Projects() {
       description: 'Real-time code editor with video call, built in MERN.',
       githubLink: 'https://github.com/ThePrabhatRawat/To-Do-List-React',
       image: '/path/to/mypeerpro-image.jpg',
-      technologies: ['ReactJS', 'SocketIO', 'WebRTC', 'UUID', 'Bootstrap']
+      technologies: ['ReactJS', 'SocketIO', 'WebRTC', 'UUID', 'Bootstrap'],
     }
   ];
 

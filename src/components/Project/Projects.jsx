@@ -31,7 +31,7 @@ function Projects() {
       title: 'MyPeerPro',
       description: 'Real-time code editor with video call, built in MERN.',
       githubLink: 'https://github.com/ThePrabhatRawat/To-Do-List-React',
-      image: require('../../images/code.png'),
+      image: require('../../images/codeEditor.png'),
       technologies: ['ReactJS', 'SocketIO', 'WebRTC', 'UUID', 'Bootstrap'],
     }
   ];

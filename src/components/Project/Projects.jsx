@@ -76,10 +76,13 @@ const styles = {
     textAlign: 'center',
     marginTop: '40px',
     fontStyle: 'italic',
+    fontSize:'1.2rem',
   },
   githubLink: {
-    color: '#4b0082',
+    color: '#ff4500',
     textDecoration: 'none',
+    fontWeight : 'bold',
+    fontSize:'1.5rem',
   },
   githubLinkHover: {
     textDecoration: 'underline',
@@ -186,9 +189,9 @@ function Projects() {
         </Row>
         <div style={styles.githubQuote}>
           <p>
-            "Why did the developer go broke? Because he used up all his cache. But you can help! Check out my other projects on 
+            "Why did the developer go broke? Because he used up all his cache. But you can help! Check out my other projects on &nbsp;
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/ThePrabhatRawat" 
               target="_blank" 
               style={hoveredButton === 'github-link' ? { ...styles.githubLink, ...styles.githubLinkHover } : styles.githubLink}
               onMouseEnter={() => setHoveredButton('github-link')}

@@ -14,8 +14,7 @@ function HeroSection() {
                 <h1 className="hero-title">Hi, I'm Prabhat Rawat</h1>
                 <p className="hero-subtitle">Full Stack Developer | MERN Stack Specialist | DSA Enthusiast</p>
                 <p className="hero-description">
-                  Passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations.
-                </p>
+                As a Full Stack Web Developer specialized in the MERN stack, I’m dedicated to crafting high-quality software that doesn't just work but makes you wonder how you ever lived without it. From small businesses to large enterprises, I bring technical expertise and a dash of humor to every project. Let's create something amazing—and have a little fun along the way.                </p>
                 <a href="#contact" className="btn btn-primary hero-btn">Get in Touch</a>
               </div>
             </Fade>

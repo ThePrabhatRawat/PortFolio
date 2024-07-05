@@ -1,41 +1,48 @@
-/* navbar css */
-.custom-navbar {
-    background-color: #1a1a1a; /* Dark background */
-    border-bottom: 2px solid #4b0082; /* Purple border */
-  }
-  
-  .navbar-brand {
-    color: #e0e0e0; /* Light text color */
-  }
-  .nav-link{
-    color: #e0e0e0;
-  }
-  .nav-link:hover {
-    color: #4b0082; /* Purple hover effect */
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .resume-button {
-    background-color: #4b0082; /* Purple button */
-    border: none;
-    color: #fff;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .resume-button:hover {
-    background-color: #6a0dad; /* Lighter purple on hover */
-  }
-  
-  .navbar-toggler {
-    border-color: #4b0082; /* Purple border for the toggler */
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23e0e0e0' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  
-  /* Add smooth scrolling */
-  html {
-    scroll-behavior: smooth;
-  }
-  
+.navbar-custom {
+  background-color: #1a1a1a; /* Dark background */
+  border-bottom: 2px solid #4b0082; /* Purple border */
+}
+
+.navbar-brand-custom {
+  color: #e0e0e0; /* Light text color */
+}
+
+.navbar-link-custom {
+  color: #e0e0e0; /* Light text color */
+}
+
+.navbar-link-custom:hover {
+  color: #4b0082; /* Purple hover effect */
+  transition: color 0.3s ease-in-out;
+}
+.link-primary:hover{
+  color: #4b0082;
+  transition: color 0.3s ease-in-out;
+}
+.link-light:hover{
+  color: #4b0082;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-resume-button {
+  background-color: #4b0082; /* Purple button */
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-resume-button:hover {
+  background-color: #6a0dad; /* Lighter purple on hover */
+}
+
+.navbar-toggler {
+  border-color: #4b0082; /* Purple border for the toggler */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23e0e0e0' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

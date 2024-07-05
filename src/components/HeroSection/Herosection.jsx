@@ -23,7 +23,7 @@ function HeroSection() {
           <Col md={6}>
             <Fade right>
               <div className="hero-image text-center">
-                <img src={require('./profile (1).jpg')} alt="Prabhat Rawat" className="img-fluid rounded-circle" />
+                <img src={require('../../images/web-developer-illustration-2005x2048-fal2biag.png')} alt="Prabhat Rawat" className="img-fluid rounded-circle" />
               </div>
             </Fade>
           </Col>

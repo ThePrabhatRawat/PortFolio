@@ -1,6 +1,90 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import './Projects.css';
+
+const styles = {
+  projectsSection: {
+    backgroundColor: '#0d0d0d',
+    color: '#e0e0e0',
+    padding: '60px 0',
+    transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-image-source 0.3s ease-in-out',
+  },
+  projectsSectionHover: {
+    transform: 'scale(1.02)',
+    boxShadow: '0 4px 20px rgba(75, 0, 130, 0.7)',
+    borderImageSource: 'linear-gradient(to right, #4b0082, #ff4500)',
+    borderImageSlice: 1,
+  },
+  sectionTitle: {
+    textAlign: 'center',
+    fontSize: '2.5rem',
+    color: '#4b0082',
+    marginBottom: '40px',
+  },
+  projectCard: {
+    backgroundColor: '#1a1a1a',
+    border: 'none',
+    borderRadius: '10px',
+    margin: '20px 10px',
+    height: '100%',
+    transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-image-source 0.3s ease-in-out',
+  },
+  projectCardHover: {
+    transform: 'translateY(-10px)',
+    boxShadow: '0 4px 20px rgba(75, 0, 130, 0.7)',
+    borderImageSource: 'linear-gradient(to right, #4b0082, #ff4500)',
+    borderImageSlice: 1,
+  },
+  projectCardImg: {
+    borderRadius: '10px 10px 0 0',
+    objectFit: 'cover',
+    width: '100%',
+    height: '200px',
+  },
+  projectBtn: {
+    backgroundColor: 'transparent',
+    border: '2px solid #4b0082',
+    color: '#e0e0e0',
+    margin: '5px',
+    transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
+  },
+  projectBtnHover: {
+    backgroundColor: '#4b0082',
+    color: '#fff',
+  },
+  techButtons: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '10px',
+    marginTop: '10px',
+  },
+  techBtn: {
+    backgroundColor: 'transparent',
+    border: '2px solid #ff4500',
+    color: '#e0e0e0',
+    transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out',
+  },
+  techBtnHover: {
+    backgroundColor: '#ff4500',
+    color: '#fff',
+  },
+  cardTitle: {
+    color: '#ff4500',
+    fontWeight: 'bold',
+    marginBottom: '15px',
+  },
+  githubQuote: {
+    textAlign: 'center',
+    marginTop: '40px',
+    fontStyle: 'italic',
+  },
+  githubLink: {
+    color: '#4b0082',
+    textDecoration: 'none',
+  },
+  githubLinkHover: {
+    textDecoration: 'underline',
+  },
+};
 
 function Projects() {
   const projects = [
@@ -36,30 +120,63 @@ function Projects() {
     }
   ];
 
+  const [hoveredCard, setHoveredCard] = useState(null);
+  const [hoveredButton, setHoveredButton] = useState(null);
+
   return (
-    <section className="projects-section section" id="projects">
+    <section
+      className="projects-section section"
+      id="projects"
+      style={styles.projectsSection}
+    >
       <Container>
-        <h2 className="section-title">Projects</h2>
+        <h2 style={styles.sectionTitle}>Projects</h2>
         <Row>
           {projects.map((project, index) => (
             <Col md={6} key={index}>
-              <Card className="project-card">
-                <Card.Img variant="top" src={project.image} alt={project.title} />
+              <Card
+                style={hoveredCard === index ? { ...styles.projectCard, ...styles.projectCardHover } : styles.projectCard}
+                onMouseEnter={() => setHoveredCard(index)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <Card.Img variant="top" src={project.image} alt={project.title} style={styles.projectCardImg} />
                 <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Title style={styles.cardTitle}>{project.title}</Card.Title>
                   <div className="project-btns">
-                    <Button variant="outline-light" href={project.githubLink} target="_blank" className="project-btn">
+                    <Button
+                      variant="outline-light"
+                      href={project.githubLink}
+                      target="_blank"
+                      style={hoveredButton === `github-${index}` ? { ...styles.projectBtn, ...styles.projectBtnHover } : styles.projectBtn}
+                      onMouseEnter={() => setHoveredButton(`github-${index}`)}
+                      onMouseLeave={() => setHoveredButton(null)}
+                    >
                       GitHub
                     </Button>
                     {project.liveLink && (
-                      <Button variant="outline-light" href={project.liveLink} target="_blank" className="project-btn">
+                      <Button
+                        variant="outline-light"
+                        href={project.liveLink}
+                        target="_blank"
+                        style={hoveredButton === `live-${index}` ? { ...styles.projectBtn, ...styles.projectBtnHover } : styles.projectBtn}
+                        onMouseEnter={() => setHoveredButton(`live-${index}`)}
+                        onMouseLeave={() => setHoveredButton(null)}
+                      >
                         Live Demo
                       </Button>
                     )}
                   </div>
-                  <div className="tech-buttons">
+                  <div style={styles.techButtons}>
                     {project.technologies.map((tech, techIndex) => (
-                      <Button variant="outline-light" className="tech-btn" key={techIndex}>{tech}</Button>
+                      <Button
+                        variant="outline-light"
+                        style={hoveredButton === `tech-${index}-${techIndex}` ? { ...styles.techBtn, ...styles.techBtnHover } : styles.techBtn}
+                        onMouseEnter={() => setHoveredButton(`tech-${index}-${techIndex}`)}
+                        onMouseLeave={() => setHoveredButton(null)}
+                        key={techIndex}
+                      >
+                        {tech}
+                      </Button>
                     ))}
                   </div>
                 </Card.Body>
@@ -67,8 +184,19 @@ function Projects() {
             </Col>
           ))}
         </Row>
-        <div className="github-quote">
-          <p>"Why did the developer go broke? Because he used up all his cache. But you can help! Check out my other projects on <a href="https://github.com/yourusername" target="_blank" className="github-link">GitHub</a>."</p>
+        <div style={styles.githubQuote}>
+          <p>
+            "Why did the developer go broke? Because he used up all his cache. But you can help! Check out my other projects on 
+            <a 
+              href="https://github.com/yourusername" 
+              target="_blank" 
+              style={hoveredButton === 'github-link' ? { ...styles.githubLink, ...styles.githubLinkHover } : styles.githubLink}
+              onMouseEnter={() => setHoveredButton('github-link')}
+              onMouseLeave={() => setHoveredButton(null)}
+            >
+              GitHub
+            </a>."
+          </p>
         </div>
       </Container>
     </section>

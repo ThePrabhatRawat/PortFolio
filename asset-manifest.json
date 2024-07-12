@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/css/main.779340b2.css",
-    "main.js": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/js/main.59a5352e.js",
-    "static/js/453.1407b060.chunk.js": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/js/453.1407b060.chunk.js",
-    "static/media/ecommece.png": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/media/ecommece.8962ae3c1cfdd391ae1a.png",
-    "static/media/chat.png": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/media/chat.dd1ae6945ec57b6d26ee.png",
-    "static/media/profile (1).jpg": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/media/profile (1).201b641ba7f2e418a8ce.jpg",
-    "index.html": "/ThePrabhatRawat/PortFolio.github.io/github_pages/index.html",
-    "main.779340b2.css.map": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/css/main.779340b2.css.map",
-    "main.59a5352e.js.map": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/js/main.59a5352e.js.map",
-    "453.1407b060.chunk.js.map": "/ThePrabhatRawat/PortFolio.github.io/github_pages/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/PortFolio/static/css/main.0fbb719b.css",
+    "main.js": "/PortFolio/static/js/main.d394c051.js",
+    "static/js/453.1407b060.chunk.js": "/PortFolio/static/js/453.1407b060.chunk.js",
+    "static/media/news.png": "/PortFolio/static/media/news.3c4d64da25250d1023f7.png",
+    "static/media/ecommece.png": "/PortFolio/static/media/ecommece.8962ae3c1cfdd391ae1a.png",
+    "static/media/web-developer-illustration-2005x2048-fal2biag.png": "/PortFolio/static/media/web-developer-illustration-2005x2048-fal2biag.eecd6f19242f0f296236.png",
+    "static/media/chat.png": "/PortFolio/static/media/chat.dd1ae6945ec57b6d26ee.png",
+    "static/media/codeEditor.png": "/PortFolio/static/media/codeEditor.eca7ba8c173e69df7420.png",
+    "index.html": "/PortFolio/index.html",
+    "main.0fbb719b.css.map": "/PortFolio/static/css/main.0fbb719b.css.map",
+    "main.d394c051.js.map": "/PortFolio/static/js/main.d394c051.js.map",
+    "453.1407b060.chunk.js.map": "/PortFolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.779340b2.css",
-    "static/js/main.59a5352e.js"
+    "static/css/main.0fbb719b.css",
+    "static/js/main.d394c051.js"
   ]
 }
